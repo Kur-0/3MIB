@@ -1,0 +1,7 @@
+{
+  "name": "lplexs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

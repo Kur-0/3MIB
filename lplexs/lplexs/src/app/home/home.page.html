@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-input
+    label="dolar" [(ngModel)]="dol"
+    labelPlacement="floating"
+    type="number"
+    placeholder="Valor da sua doação em dólar:">
+    </ion-input>
+  </ion-item>
+
+  <ion-button
+    expand="block" (click)="conversao()">Converter
+  </ion-button>
+
+  <ion-label>
+      {{res}}
+  </ion-label>
+
+</ion-content>
