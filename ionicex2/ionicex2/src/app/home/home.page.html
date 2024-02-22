@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-item>
+      <ion-input
+      label="Avaliação Continua" [(ngModel)]="AC"
+      labelPlacement="floating"
+      type="number"
+      placeholder="Digite a sua nota da AC: ">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+      label="Avaliação Geral" [(ngModel)]="AGH"
+      labelPlacement="floating"
+      type="number"
+      placeholder="Digite a sua nota da AGH: ">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+      label="Avaliação Trimestral" [(ngModel)]="AT"
+      labelPlacement="floating"
+      type="number"
+      placeholder="Digite a sua nota da AT: ">
+      </ion-input>
+    </ion-item>
+
+    <ion-button
+    expand="block" (click)="calcularMedia()">Calcular Média
+    </ion-button>
+
+    <ion-label>
+      {{res}}
+    </ion-label>
+  </ion-content>
+
+
+</ion-content>
