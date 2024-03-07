@@ -1,0 +1,7 @@
+{
+  "name": "acalex",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

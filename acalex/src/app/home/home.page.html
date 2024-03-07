@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      AC BALA S2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1>EXERCICIO 1</h1>
+
+  <p>Conversão Fahrenheit e Celcius:</p>
+
+  <ion-item>
+    <ion-input [(ngModel)]="Celsius" label="" type="number" placeholder="Digite a temperatura em Celsius"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input [(ngModel)]="Fahrenheit" label="" type="number" placeholder="Digite a temperatura em Fahrenheit"></ion-input>
+  </ion-item>
+  <ion-button (click)="celsiuspfahrenheit()" expand="full">Calcular Celsius para Fahrenheit</ion-button>
+  <ion-label>{{newcelsius}}</ion-label>
+  <ion-button (click)="fahrenheitpcelsius()" expand="full">Calcular Fahrenheit para Celsius</ion-button>
+  <ion-label>{{newfahrenheit}}</ion-label>
+
+  <ion-list>
+  <ion-button fill="clear"></ion-button>
+  <ion-button fill="clear"></ion-button>
+  <ion-button fill="clear"></ion-button>
+  <ion-button fill="clear"></ion-button>
+
+
+</ion-list>
+
+<h2>EXERCICIO 2</h2>
+
+<p>Descobrindo o tipo do Triângulo:</p>
+
+<ion-input label="Digite o valor do PRIMEIRO lado:" type="number" placeholder="0" [(ngModel)] = "ladoum"></ion-input>
+
+  <ion-input label="Digite o valor do SEGUNDO lado:" type="number" placeholder="0" [(ngModel)] = "ladodois"></ion-input>
+
+  <ion-input label="Digite o valor do TERCEIRO lado:" type="number" placeholder="0" [(ngModel)] = "ladotres"></ion-input>
+
+  <ion-button expand="block" (click)="calcTriangulo()">Calcular</ion-button>
+
+  <ion-label>{{Triangulo}}</ion-label>
+
+
+
+
+
+<ion-list>
+  <ion-button fill="clear"></ion-button>
+  <ion-button fill="clear"></ion-button>
+  <ion-button fill="clear"></ion-button>
+  <ion-button fill="clear"></ion-button>
+</ion-list>
+<h3>EXERCICIO 3</h3>
+
+  <p>Calculo de média de 4 notas:</p>
+
+  <ion-input label="Digite a PRIMEIRA nota:" type="number" placeholder="0" [(ngModel)] = "notaum"></ion-input>
+
+  <ion-input label="Digite a SEGUNDA nota:" type="number" placeholder="0" [(ngModel)] = "notadois"></ion-input>
+
+  <ion-input label="Digite a TERCEIRA nota:" type="number" placeholder="0" [(ngModel)] = "notatres"></ion-input>
+
+  <ion-input label="Digite a QUARTA nota:" type="number" placeholder="0" [(ngModel)] = "notaquatro"></ion-input>
+
+  <ion-button expand="block" (click)="calcMedia()">Calcular Média</ion-button>
+
+  <ion-label>{{media}}</ion-label>
+
+</ion-content>
