@@ -1,4 +1,7 @@
- /* HOME */
+/* HOME... */
+
+
+/* HEADER */
 
 header{
   display: flex;
@@ -30,14 +33,21 @@ a{
 }
 
 
-
+/* PRINCIPAL */
 
 main{
   width: 1287px;
   margin-top: 133px;
+  margin-left: 64px;
+  margin-right: 89px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+#imghero{ 
+  width: 651px;
+  height: 469px;
 }
 
 #titulo{
@@ -66,7 +76,7 @@ main{
 }
 
 button{
-  width: 297px;
+  width: 314px;
   height: 66px;
   padding: 24px 56px 24px 70px;
   gap: 10px;
@@ -79,12 +89,26 @@ button{
   font-size: 22px;
   font-weight: 500;
   line-height: 18px;
-  text-align: left;
+  text-align: center;
 
 }
 
+/* CARDS */
+
 #fundoVermelho{
-  background-color: red;
+  background-color: #F1C2B0;
+}
+
+#fundoAmarelo{
+  background-color: #F9EB98;
+}
+
+#fundoAzul{
+  background-color: #C0D9DD;
+}
+
+#fundoRoxo{
+  background-color: #6975E8;
 }
 
 footer{
@@ -94,29 +118,11 @@ footer{
   justify-content: space-around;
 }
 
+.infoCard{
+  margin-left: 34px;
+}
+
 .card1{
-  width: 309px;
-  height: 326px;
-
-  display: flex;
-  flex-direction: row;
-  background-color: #F1C2B0;
-  border-radius: 16px;
-  padding: 16px, 34px, 16px, 34px;
-}
-
-.card2{
-  width: 309px;
-  height: 326px;
-  
-  display: flex;
-  flex-direction: row;
-  background-color: #F9EB98;
-  border-radius: 16px;
-  padding: 16px, 34px, 16px, 34px;
-}
-
-.card3{
   width: 309px;
   height: 326px;
   
@@ -127,18 +133,9 @@ footer{
   padding: 16px, 34px, 16px, 34px;
 }
 
-.card4{
-  width: 309px;
-  height: 326px;
-  
-  display: flex;
-  flex-direction: row;
-  background-color: #6975E8;
-  border-radius: 16px;
-  padding: 16px, 34px, 16px, 34px;
-}
-
 #h1Card{
+  margin-top: 16px;
+  margin-bottom: -20px;
   font-family: Roboto Mono;
   font-size: 64px;
   font-weight: 400;
@@ -148,6 +145,7 @@ footer{
 }
 
 #h2Card{
+  margin-bottom: -8px;
   font-family: Roboto Mono;
   font-size: 32px;
   font-weight: 500;

@@ -9,7 +9,7 @@ function Principal(){
                 <button>Começar agora!</button>
             </div>
             {/* <img src="../Images/Hero image.png" alt="Imagenzona Bala" /> */}
-            <img src={imgHero} alt="Imagenzona Bala" />
+            <img id='imghero' src={imgHero} alt="Imagenzona Bala" />
         </main>
     );
 }

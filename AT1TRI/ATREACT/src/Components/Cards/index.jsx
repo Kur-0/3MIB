@@ -5,7 +5,7 @@ export default function Cards(props){
         <footer>
         {props.propsCards.map((element)=>(
             <div id={element.corFundo} className="card1"   key={element.id}>
-                <div className="nseiainda">
+                <div className="infoCard">
                     <h1 id="h1Card">{element.numero}</h1>
                     <h2 id="h2Card">{element.plataforma}</h2>
                     <p id="pCard">{element.frase}</p>
@@ -16,8 +16,3 @@ export default function Cards(props){
         </footer> 
     );
 }
-
-// fontes 
-// display
-// cor de fundo
-// imagens

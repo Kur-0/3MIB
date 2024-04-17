@@ -2,10 +2,15 @@ function Header() {
     return (
         
         <header>
-          <nav className="header">              
-              <a itemID="sub" href="#">Home</a>
-              <a href="#">Sobre</a>
-              <a href="#">Contato</a>            
+          <nav className="header">  
+
+          {menuItems.map((menuItem, index) => (
+            <ul>
+              <li key={index}>
+                <Link to={menuItem.link}>{menuItem.text}</Link>
+              </li>
+            </ul>
+          ))}          
           </nav>
         </header>
       
