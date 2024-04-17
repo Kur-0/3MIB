@@ -83,6 +83,10 @@ button{
 
 }
 
+#fundoVermelho{
+  background-color: red;
+}
+
 footer{
   margin-top: 104px;
   display: flex;

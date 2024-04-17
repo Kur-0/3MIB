@@ -1,3 +1,5 @@
+import imgHero from '../../assets/Images/Hero image.png'
+
 function Principal(){
     return(
         <main>
@@ -7,7 +9,7 @@ function Principal(){
                 <button>Começar agora!</button>
             </div>
             {/* <img src="../Images/Hero image.png" alt="Imagenzona Bala" /> */}
-            <img src="https://picsum.photos/550/400" alt="Imagenzona Bala" />
+            <img src={imgHero} alt="Imagenzona Bala" />
         </main>
     );
 }
