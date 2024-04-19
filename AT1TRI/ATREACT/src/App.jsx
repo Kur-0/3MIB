@@ -5,12 +5,6 @@ import Header from "./Components/Header"
 
 function App(){
 
-  const menuItems = [
-    { text: 'Home', link: '/' },
-    { text: 'Sobre', link: '/sobre' },
-    { text: 'Contato', link: '/contato' },
-  ];
-
   const dataCards= [
     {numero: "01", plataforma: "Youtube",
     frase: "Produza conteúdo cativante e conquiste seu público com vídeos de alta qualidade no maior palco digital do mundo.", 
@@ -39,7 +33,7 @@ function App(){
 
   return (
     <>
-    <Header menuItems={menuItems}></Header>
+    <Header></Header>
     <Principal></Principal>
     <Cards propsCards= {dataCards}/>
     </>
