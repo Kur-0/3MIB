@@ -2,13 +2,12 @@ import Header from "../Components/Header";
 import PrincipalContato from "./Contato";
 
 
-function App(){
+function AppContato(){
     return(
         <>
-        <Header></Header>
         <PrincipalContato></PrincipalContato>
         </>
     );
 }
 
-export default App
+export default AppContato

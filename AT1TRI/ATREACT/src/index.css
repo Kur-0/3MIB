@@ -1,6 +1,5 @@
 /* HOME... */
 
-
 /* HEADER */
 
 header{
@@ -23,31 +22,36 @@ header{
   justify-content: space-between;
 }
 
-#sub{
-  text-decoration: underline;
-}
-
 a{
   text-decoration: none;
   color: #333333;
 }
 
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 /* PRINCIPAL */
 
-main{
-  width: 1287px;
+
+#mainHome{
+
   margin-top: 133px;
-  margin-left: 64px;
   margin-right: 89px;
+  margin-left: 100px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  align-self: center;
   justify-content: space-between;
 }
 
-#imghero{ 
-  width: 651px;
-  height: 469px;
+.textinho{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #titulo{
@@ -66,7 +70,6 @@ main{
 #pSubtitulo{
   width: 497px;
 
-
   font-family: Roboto Mono;
   font-size: 24px;
   font-weight: 400;
@@ -77,12 +80,12 @@ main{
 
 button{
   width: 314px;
-
+  height: 66px;
   padding: 24px 56px 24px 70px;
   gap: 10px;
   border-radius: 40px;
   background-color: #333333;
-
+  border: none;
 
   color: white;
   font-family: Roboto Mono;
@@ -90,42 +93,44 @@ button{
   font-weight: 500;
   line-height: 18px;
   text-align: center;
-
+  padding: 10px 0px 10px 0px;
+  margin-top: 10px;
 }
 
-/* CARDS */
-
-#fundoVermelho{
-  background-color: #F1C2B0;
-}
-
-#fundoAmarelo{
-  background-color: #F9EB98;
-}
-
-#fundoAzul{
-  background-color: #C0D9DD;
-}
-
-#fundoRoxo{
-  background-color: #6975E8;
-}
-
-footer{
+#footerCards{
   margin-top: 104px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.infoCard{
-  margin-left: 34px;
-}
 
 .card1{
   width: 309px;
   height: 326px;
-  
+
+  display: flex;
+  flex-direction: row;
+  background-color: #F1C2B0;
+  border-radius: 16px;
+  padding: 16px, 34px, 16px, 34px;
+}
+
+.card2{
+  width: 309px;
+  height: 326px;
+
+  display: flex;
+  flex-direction: row;
+  background-color: #F9EB98;
+  border-radius: 16px;
+  padding: 16px, 34px, 16px, 34px;
+}
+
+.card3{
+  width: 309px;
+  height: 326px;
+
   display: flex;
   flex-direction: row;
   background-color: #C0D9DD;
@@ -133,43 +138,81 @@ footer{
   padding: 16px, 34px, 16px, 34px;
 }
 
+.card4{
+  width: 309px;
+  height: 326px;
+
+  display: flex;
+  flex-direction: row;
+  background-color: #6975E8;
+  border-radius: 16px;
+  padding: 16px, 34px, 16px, 34px;
+}
+
+.headerCard{
+  width: 290px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#iconCard{
+  display: flex;
+  justify-content: flex-end;
+  align-self: self-end;
+  margin-bottom: 90px;
+}
+
 #h1Card{
-  margin-top: 16px;
-  margin-bottom: -20px;
   font-family: Roboto Mono;
   font-size: 64px;
   font-weight: 400;
   line-height: 84.41px;
   text-align: left;
   color: white;  
+  margin-left: 34px;
+  margin-top: 16px;
 }
 
 #h2Card{
-  margin-bottom: -8px;
   font-family: Roboto Mono;
   font-size: 32px;
   font-weight: 500;
   line-height: 42.2px;
   text-align: left;
   color: #333333;  
+  margin-bottom: -10px;
+  margin-top: -40px;
+  margin-left: 34px;
 }
 
 #pCard{
+  width: 241px;
   font-family: Roboto Mono;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.74px;
   text-align: left;
   color: #333333;  
+  margin-left: 34px;
 }
 
 
 /* SOBRE */
 
 #mainSobre{
-  width: 1045px;
+  margin-top: 133px;
+  margin-left: 100px;
+  margin-right: 89px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+.imgSobre{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 #imgphone, #imgphone2{
@@ -183,6 +226,7 @@ footer{
   width: 100%;
   height: 564px;
   top: 653px;
+  margin-top: 54px;
   background-color: #F4F2F2;
   display: flex;
   flex-direction: column;
@@ -207,13 +251,15 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 
   font-family: Roboto Mono;
   font-size: 15px;
   font-weight: 700;
   line-height: 19.78px;
-  letter-spacing: 0.33000001311302185px;
+  letter-spacing: 0.33px;
   text-align: center;
+  margin: 0px;
 
 }
 
@@ -225,13 +271,16 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #dddddd;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 
   font-family: Roboto Mono;
   font-size: 15px;
   font-weight: 700;
   line-height: 19.78px;
-  letter-spacing: 0.33000001311302185px;
+  letter-spacing: 0.33px;
   text-align: center;
+  margin: 0px;
 }
 
 .cardSobre1{
@@ -239,14 +288,17 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .centroCardSobre1{
   width: 240px;
-  height: 389px;
-  border: 1px 0px 0px 0px;
+  height: 340px;
   background-color: #FFFFFF;
-  
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h5{
@@ -254,29 +306,39 @@ h5{
   font-size: 12px;
   font-weight: 400;
   line-height: 15.83px;
-  letter-spacing: 0.33000001311302185px;
-  text-align: center;
+  letter-spacing: 0.33px;
+  text-align: center; 
+  display: flex;
+  justify-content: flex-start;
+  color: #8790A3;
+  margin-bottom: 9px;
+  margin-left: 16px;
 }
 
 #searchSobre{
   width: 225px;
   height: 32px;
   border-radius: 16px;
-  border: 1px;
+  border: 1px solid #dddddd;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
 }
 
-#searchSobre ::placeholder{
-  font-family: Roboto Mono;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15.83px;
-  letter-spacing: 0.33000001311302185px;
-  text-align: center;
-  color: #131925;
+#searchSobreVazio{
+  width: 225px;
+  height: 32px;
+  border-radius: 16px;
+  border: none;
+  margin-top: 74px;
+  margin-left: 5px;
+}
+
+#lertrinhaSelect{
+  margin-left: 13px;
 }
 
 #btnCardSobre1{
-  width: 240px;
+  width: 220px;
   height: 34px;
   background-color: #6975E8;
   border-radius: 6px;
@@ -286,15 +348,19 @@ h5{
   font-size: 14px;
   font-weight: 700;
   line-height: 18.46px;
-  letter-spacing: 0.33000001311302185px;
+  letter-spacing: 0.33px;
   text-align: center;
   box-shadow: none;
   border: none;
-
+  padding: 0px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #btnCardSobre2{
-  width: 240px;
+  width: 220px;
   height: 34px;
   background-color: #ffffff;
   border-radius: 6px;
@@ -304,10 +370,15 @@ h5{
   font-size: 14px;
   font-weight: 700;
   line-height: 18.46px;
-  letter-spacing: 0.33000001311302185px;
+  letter-spacing: 0.33px;
   text-align: center;
   box-shadow: none;
-  border: none;
+  border: 1px solid #929292;
+  padding: 0px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #planos{
@@ -320,7 +391,7 @@ h5{
   font-size: 28px;
   font-weight: 400;
   line-height: 36.93px;
-  letter-spacing: 0.33000001311302185px;
+  letter-spacing: 0.33px;
   text-align: center;
 
 }
@@ -328,11 +399,27 @@ h5{
 
 /* CONTATO */
 
+#mainDoMainContato{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 #mainContato{
-  width: 1045px;
+  margin-top: 133px;
+  margin-left: 64px;
+  margin-right: 89px;
   display: flex;
   flex-direction: column;
-  border-right: #333333;
+  justify-content: space-between;
+  border-right: 1px solid #B9B7B7;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
 }
 
 #iconContato{
@@ -345,11 +432,82 @@ h5{
   flex-direction: row;
 }
 
+#nome{
+  font-family: Roboto Mono;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34.29px;
+  text-align: left;
+  color: #333333; 
 
 
+}
+
+#email{
+  font-family: Roboto Mono;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34.29px;
+  text-align: left;
+  color: #333333; 
+}
 
 
+#mensagem{
+  font-family: Roboto Mono;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34.29px;
+  text-align: left;
+  color: #333333;  
+}
 
+#envioForms{
+  width: 220px;
+  height: 34px;
+  background-color: #6975E8;
+  border-radius: 6px;
 
+  color: #FFFFFF;
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.46px;
+  letter-spacing: 0.33px;
+  text-align: center;
+  box-shadow: none;
+  border: none;
+  padding: 0px;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  margin-top: 37px;
+}
 
+#caixaNome{
+  width: 391px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid #dddddd;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+}
 
+#caixaEmail{
+  width: 391px;
+  height: 32px;
+  border-radius: 16px;
+  border: 1px solid #dddddd;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+}
+
+#caixaMensagem{
+  width: 507px;
+  height: 229px;
+  border-radius: 16px;
+  border: 1px solid #dddddd;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 5px;
+}
