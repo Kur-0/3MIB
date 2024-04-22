@@ -219,8 +219,9 @@ footer{
 
 #mainContato{
   width: 1045px;
+  height: ;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #iconContato{
@@ -230,5 +231,5 @@ footer{
 
 .leftContato{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
