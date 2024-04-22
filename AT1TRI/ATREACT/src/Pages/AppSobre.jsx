@@ -1,11 +1,13 @@
 import Header from "../Components/Header";
+import Principal from "./Sobre";
 
-function Sobre(){
+function App(){
     return(
         <>
         <Header></Header>
+        <Principal></Principal>
         </>
     );
 }
 
-export default Sobre
+export default App

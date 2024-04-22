@@ -52,7 +52,7 @@ main{
 
 #titulo{
   width: 577px;
-  height: 148px;
+
 
 
   font-family: Roboto Mono;
@@ -65,7 +65,7 @@ main{
 
 #pSubtitulo{
   width: 497px;
-  height: 96px;
+
 
   font-family: Roboto Mono;
   font-size: 24px;
@@ -77,7 +77,7 @@ main{
 
 button{
   width: 314px;
-  height: 66px;
+
   padding: 24px 56px 24px 70px;
   gap: 10px;
   border-radius: 40px;
@@ -161,4 +161,155 @@ footer{
   line-height: 23.74px;
   text-align: left;
   color: #333333;  
+}
+
+
+/* SOBRE */
+
+#imgphone, #imgphone2{
+  width: 216px;
+  height: 469px;
+  border-radius: 30px 0px 0px 0px;
+}
+
+footer{
+  width: 100%;
+  height: 564px;
+  top: 653px;
+  background-color: #F4F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardsSobre{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 733px;
+}
+
+
+#planos{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: Roboto Mono;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36.93px;
+  letter-spacing: 0.33000001311302185px;
+  text-align: center;
+
+}
+
+#cardSobre{
+  width: 240px;
+  height: 74px;
+  background-color: #6975E8;
+  border-radius: 25px 25px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Roboto Mono;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.78px;
+  letter-spacing: 0.33000001311302185px;
+  text-align: center;
+
+}
+
+#cardSobreTitulo{
+  width: 240px;
+  height: 74px;
+  background-color: #ffffff;
+  border-radius: 25px 25px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Roboto Mono;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.78px;
+  letter-spacing: 0.33000001311302185px;
+  text-align: center;
+}
+
+.cardSobre1{
+  display: flex;
+  flex-direction: column;
+}
+
+.centroCardSobre1{
+  width: 240px;
+  height: 389px;
+  border: 1px 0px 0px 0px;
+  background-color: #FFFFFF;
+  ;
+}
+
+h5{
+  font-family: Roboto Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.83px;
+  letter-spacing: 0.33000001311302185px;
+  text-align: center;
+}
+
+#searchSobre{
+  width: 225px;
+  height: 32px;
+  border-radius: 15px;
+}
+
+#searchSobre ::placeholder{
+  font-family: Roboto Mono;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.83px;
+  letter-spacing: 0.33000001311302185px;
+  text-align: center;
+  color: #131925;
+}
+
+#btnCardSobre1{
+  width: 240px;
+  height: 34px;
+  background-color: #6975E8;
+  border-radius: 6px;
+
+  color: #FFFFFF;
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.46px;
+  letter-spacing: 0.33000001311302185px;
+  text-align: center;
+  box-shadow: none;
+  
+}
+
+#btnCardSobre2{
+  width: 240px;
+  height: 34px;
+  background-color: #ffffff;
+  border-radius: 6px;
+
+  color: #2F2E41;
+  font-family: Roboto Mono;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.46px;
+  letter-spacing: 0.33000001311302185px;
+  text-align: center;
+  box-shadow: none;
+  
 }
