@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './Pages/AppSobre'
+import App from './Pages/AppContato'
 import './index.css'
 import Sobre from './Pages/AppSobre'
 
