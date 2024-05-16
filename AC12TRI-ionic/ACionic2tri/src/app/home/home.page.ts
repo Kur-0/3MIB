@@ -7,23 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  juros = 0;
-  valorJuros=0;
-  emprestimo = 0;
-  parcelas = 0;
-  qntMeses=0;
-  total=0;
-
+  desconto = 0;
+  precoOriginal = 0;
+  precoComDesconto = 0;
 
 constructor() {}
 
-calcularPrestacao() {
-  this.valorJuros = this.emprestimo * (this.juros / 100)
-  this.parcelas = this.emprestimo + this.valorJuros / this.qntMeses;
+calcularPrecoComDesconto() {
+  this.precoComDesconto = this.precoOriginal - (this.precoOriginal * (this.desconto / 100));
 }
-
-calcularTotal() {
-  this.total = this.parcelas * this.qntMeses;
-  }
 
 }

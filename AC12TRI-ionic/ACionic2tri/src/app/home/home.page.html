@@ -5,41 +5,29 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content>
   <ion-item>
-    <ion-label>Valor do Empréstimo: {{ emprestimo }}</ion-label>
+    <h1>Promoção de Mercado</h1>
   </ion-item>
-  <ion-item>
-    <ion-range min="0" max="100" step="1" [(ngModel)]="emprestimo"></ion-range>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Taxa de Juros Anual: {{ juros }}%</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-range min="0" max="100" step="1" [(ngModel)]="juros"></ion-range>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Quantidade de Parcelas: {{ qntMeses }}</ion-label>
-  </ion-item>
-  <ion-item>
-    <ion-range min="0" max="100" step="1" [(ngModel)]="qntMeses"></ion-range>
-  </ion-item>
-
-  <ion-button expand="block" (click)="calcularPrestacao()">Calcular
-    Prestação</ion-button>
-
-  <ion-item>
-    <ion-label>Valor da Prestação: {{ parcelas | currency:'BRL'
-      }}</ion-label>
-  </ion-item>
-
-  <ion-button expand="block" (click)="calcularTotal()">Calcular
-    Valor Total</ion-button>
+  <ion-content>
+    <ion-item>
+      <ion-label>Selecione o desconto: {{ desconto }}</ion-label>
+      <ion-range [(ngModel)]="desconto" min="0" step="1" max="100" ></ion-range>
+    </ion-item>
 
     <ion-item>
-      <ion-label>Valor Total: {{ total | currency:'BRL' }}</ion-label>
-  </ion-item>
+      <ion-label>Preço original: {{ precoOriginal }}</ion-label>
+      <ion-range [(ngModel)]="precoOriginal" min="0" step="1" max="100" ></ion-range>
+    </ion-item>
 
+    <ion-button expand="block" (click)="calcularPrecoComDesconto()">Calcular
+      Desconto</ion-button>
+
+    <ion-item>
+      <ion-label>Valor do Desconto {{ precoComDesconto | currency:'BRL'}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Valor Original: {{ precoOriginal | currency:'BRL' }}</ion-label>
+    </ion-item>
 </ion-content>
