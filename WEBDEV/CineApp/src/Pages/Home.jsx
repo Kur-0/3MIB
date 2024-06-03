@@ -6,12 +6,12 @@ function Home() {
             <div className='grid grid-cols-3 gap-4'>
                 {
                     data.map(filme => (
-                        <div className="card bg-slate-400" key={filme.title}>
+                        <div className="card" key={filme.title}>
                         <h1> {filme.title} </h1>
-                        <img src={filme.image} alt={filme.title}/>
+                        <img className='mb-2' src={filme.image} alt={filme.title}/>
                             <div className='tag'>
                                 {filme.tags.map(tag =>(
-                                        <span className='text-purple-900' key = {tag}> {tag} </span>
+                                        <span className='bg-purple-600 p-1 m-1 rounded-lg text-white' key = {tag}> {tag} </span>
                                     ))}
                             </div>
                             <div className="texto">
