@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class obstaculo : MonoBehaviour
+
 {
     [SerializeField]
     private float velocidade = 0.6f;
@@ -17,5 +18,14 @@ public class obstaculo : MonoBehaviour
     void Update()
     {
         this.transform.Translate(Vector3.left * velocidade * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        this.Destruir();
+    }
+    void  Destruir()
+    {
+        GameObject.Destroy(this.gameObject);
     }
 }
