@@ -8,6 +8,7 @@ import Sobre from './Pages/Sobre'
 import Contato from './Pages/Contato'
 import PageNotFound from './Pages/PageNotFound'
 import Home from './Pages/Home'
+import PaginaFilmes from './Pages/paginaFilme'
 
 
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       children: [
         {index: true, element: <Home/>},
         {path: "filmes", element: <Filmes/>},
+        {path: "filmes/:id", element: <PaginaFilmes/>},
         {path: "sobre", element: <Sobre/>},
         {path: "contato", element: <Contato/>},
         {path: "*", element: <PageNotFound/>}      
