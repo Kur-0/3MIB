@@ -1,0 +1,7 @@
+{
+  "name": "ac2fds",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

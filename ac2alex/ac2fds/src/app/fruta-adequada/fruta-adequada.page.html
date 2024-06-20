@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Fruta-Adequada</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-label>
+      {{media}}
+    </ion-label>
+
+    <ion-item>
+      <ion-label *ngFor="let planta of culturas">{{planta.name}}</ion-label>
+    </ion-item>
+
+</ion-content>

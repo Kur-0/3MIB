@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Frutinhas!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <h1>Época de Colheita</h1>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Selecione a temperatura do primeiro mês: {{ temperatura1 }}</ion-label>
+    <ion-range [(ngModel)]="temperatura1" min="0" step="1" max="50" ></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>Selecione a temperatura do segundo mês: {{ temperatura2 }}</ion-label>
+    <ion-range [(ngModel)]="temperatura2" min="0" step="1" max="50" ></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>Selecione a temperatura do terceiro mês: {{ temperatura3 }}</ion-label>
+    <ion-range [(ngModel)]="temperatura3" min="0" step="1" max="50" ></ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>Selecione a temperatura do quarto mês: {{ temperatura4 }}</ion-label>
+    <ion-range [(ngModel)]="temperatura4" min="0" step="1" max="50" ></ion-range>
+  </ion-item>
+  <ion-button expand="block" (click)="calcularMedia()">Calcular
+    Media de Temperaturas
+  </ion-button>
+  <ion-item>
+    <ion-label>Média: {{ media }}</ion-label>
+  </ion-item>
+  <ion-button expand="block" (click)="abrirTela()">Veja as Frutas!
+  </ion-button>
+</ion-content>
