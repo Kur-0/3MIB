@@ -1,11 +1,12 @@
+import Buttons from "../Buttons/Buttons";
 import Navbar from "../Navbar/Navbar";
 
 function Header() {
     return ( 
-        <header className="flex bg-black p-4 text-white justify-around">
-            <span>Olá, visitante!</span>
-            <h1>Bem vindo ao Chinema</h1>
+        <header className="flex p-4 text-black font-medium justify-around">
+            <img src="/AniMex.png" alt="logo"/>
             <Navbar></Navbar>
+            <div className="btt flex "><Buttons/></div>           
         </header>
      );
 }

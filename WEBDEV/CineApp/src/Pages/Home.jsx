@@ -2,7 +2,9 @@ import data from '../../artigos.json'
 function Home() {
     return ( 
         <>
-        <input type="text" id="buscar" placeholder='Digite sua busca'/>
+            <div className="w-10 h-8">
+                <img src={theme.backgroundImage.violet} />
+            </div>
             <div className='grid grid-cols-3 gap-4'>
                 {
                     data.map(filme => (
