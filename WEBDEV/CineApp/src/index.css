@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Fleur De Leah", cursive;
+        font-weight: 400;
+        font-style: normal;
+        src: url('/assets/fonts/FleurdeLeah.ttf') format('truetype');
+    }
+  }
+
+.text-stroke {
+
+    text-shadow: 
+      -1px -1px 0 #005651,  
+      1px -1px 0 #005651,
+      -1px 1px 0 #005651,
+      1px 1px 0 #005651;
+  }
+
+.hover-stroke {
+  transition: all 0.3s ease;
+}
+
+.hover-stroke:hover {
+    text-shadow: 0 0 2px #2dd4bf, /* define a cor do contorno aqui */
+                 0 0 2px #2dd4bf,
+                 0 0 2px #2dd4bf,
+                 0 0 2px #2dd4bf;
+    mix-blend-mode: difference; /* aplica o blend mode para destacar o contorno */
+}
+  /* #2dd4bf */

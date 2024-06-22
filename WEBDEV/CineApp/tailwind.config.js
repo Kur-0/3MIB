@@ -6,10 +6,10 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-      'violet': "url('/public/violet 1.png')",
-      'footer-texture': "url('/public/Rectangle 1.png')",
-    }},
+      fontFamily: {
+        'fleur': ['Fleur de Leah', 'sans-serif'],
+      },
+      },
   },
   plugins: [],
 }
