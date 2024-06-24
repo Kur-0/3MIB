@@ -10,6 +10,7 @@ import PageNotFound from './Pages/PageNotFound'
 import Home from './Pages/Home'
 import PaginaFilmes from './Pages/paginaFilme'
 import Player from './Pages/Player'
+import Noticias from './Pages/Noticias'
 
 
 
@@ -25,6 +26,9 @@ const router = createBrowserRouter(
         {path: "sobre", element: <Sobre/>},
         {path: "contato", element: <Contato/>},
         {path: "player", element: <Player/>},
+        {path: "noticias", element: <Noticias/>},
+        {path: "sobre/noticias", element: <Noticias/>},
+        {path: "sobre/contato", element: <Contato/>},
         {path: "*", element: <PageNotFound/>}      
       ]
     }

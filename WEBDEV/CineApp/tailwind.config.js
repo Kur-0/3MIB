@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'fleur': ['Fleur de Leah', 'sans-serif'],
+        'jacques': ['Jacques Francois', 'sans-serif'],
       },
       },
   },

@@ -20,9 +20,11 @@ function PaginaFilmes(){
 
     return(
         <>
-        <img className="w-auto" src={`${urlImg}${filme.backdrop_path}`}/>
-        <h1> {filme.title} </h1>
-        <p>{filme.overview}</p>
+        <div className="flex flex-col items-center mt-[100px]">
+            <img className="w-auto rounded-[30px]" src={`${urlImg}${filme.backdrop_path}`}/>
+            <h1 className="mt-[10px] font-jacques text-[40px] text-teal-500"> {filme.title} </h1>
+            <p className="w-[1250px] mt-[20px] font-jacques text-[20px]">{filme.overview}</p>
+        </div>
         </>
     );
 }

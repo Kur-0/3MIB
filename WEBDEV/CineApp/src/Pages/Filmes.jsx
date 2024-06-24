@@ -19,17 +19,21 @@ function Filmes() {
 
     return ( 
         <>
-        <h1>Filmes</h1>
-        <div className="listaFilmes flex flex-row gap-3">
-        {
-            filmes.map(filme => (
-                <div className="card-filme" key={filme.id}>
-                    <img className="w-auto" src={`${urlImg}${filme.poster_path}`}/>
-                    <h1>{filme.title}</h1>
-                    <Link to={`${filme.id}`} className="bg-blue-500">Saber mais</Link>
-                </div>
+        <div className={`bg-filmes ${location.pathname === '/filmes' ? 'bg-filmes' : ''}`}>
+            <h1 className="mt-[130px] text-teal-500 text-[40px] font-jacques text-center">♥ Filmes Populares ♥</h1>
+            <div className="listaFilmes flex gap-3 flex-wrap mt-[51px] justify-center items-center self-center">
+            {
+                filmes.map(filme => (
+                    <div className="flex flex-col items-center" key={filme.id}>
+                        <img className="w-[190px] h-[292px] rounded-[10px] mt-[56px] mr-[30px]" src={`${urlImg}${filme.poster_path}`} alt={filme.title} />
+                        <div className="flex items-center justify-center mt-[22px] mr-[30px]">
+                            <h2 className=" mb-1 text-center justify-center items-center underline">{filme.title}</h2>
+                            <Link to={`${filme.id}`} className="bg-teal-500  rounded-[20px] text-white ml-[10px] p-1">+info</Link>
+                        </div>
+                    </div>
                 ))
-        }
+            }
+            </div>
         </div>
         </>
      );

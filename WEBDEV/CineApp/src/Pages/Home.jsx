@@ -7,7 +7,7 @@ import CardsHome from '../componentes/CardsHome/CardsHome'
 function Home() {
     return ( 
         <>  
-        <div className="bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/violetbg.png)'}}>
+        <div className="min-h-screen " style={{ backgroundImage: 'url(/texturaHome.png)'}}>
             <div className="main ml-[124px] ">
                 <div className="detalhes-filme mt-[102px]">
                     <h1 className='font-fleur text-[86px] text-white text-stroke'> Violet Evergarden </h1>
@@ -24,8 +24,7 @@ function Home() {
                     </div>
                 </div>   
                 <CardsHome/>
-            </div>
-            
+            </div>            
         </div>
         </>
         
