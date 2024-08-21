@@ -4,8 +4,8 @@
         <ui:VisualElement style="flex-grow: 1; justify-content: space-between;">
             <ui:Label tabindex="-1" text="Flappy Miku" parse-escape-sequences="true" display-tooltip-when-elided="true" style="justify-content: center; align-self: center; align-items: center; margin-top: 200px;" />
             <ui:VisualElement style="flex-grow: initial; flex-shrink: initial; flex-direction: row; width: 200px; justify-content: space-between; align-self: auto;">
-                <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
-                <ui:Button text="Score" parse-escape-sequences="true" display-tooltip-when-elided="true" style="margin-top: 2px; margin-right: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+                <ui:Button text="Play" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnPlay" style="border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
+                <ui:Button text="Score" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btnScore" style="margin-top: 2px; margin-right: 4px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="VisualElement" style="flex-grow: initial; background-image: url(&quot;project://database/Assets/sprites/chao.png?fileID=2800000&amp;guid=ded47741b22fa0346910854f5832b05c&amp;type=3#chao&quot;); height: 120px; flex-shrink: initial; align-items: auto; align-self: auto; justify-content: flex-end; width: 330px;" />
