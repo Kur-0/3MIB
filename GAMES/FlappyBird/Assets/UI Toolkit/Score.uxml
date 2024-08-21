@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1;" />
-    <ui:VisualElement style="flex-grow: 1;" />
-    <ui:VisualElement style="flex-grow: 1;" />
-    <ui:VisualElement style="flex-grow: 1;" />
+    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/sprites/WhatsApp%20Image%202024-08-21%20at%2015.28.13.jpeg?fileID=2800000&amp;guid=25bfd51fed02c174b9ef1f74668cb888&amp;type=3#WhatsApp Image 2024-08-21 at 15.28.13&quot;);" />
+    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/sprites/WhatsApp%20Image%202024-08-21%20at%2015.28.14%20(1).jpeg?fileID=2800000&amp;guid=ccc3c64a4883f6e41b8f7bdf3f988ec0&amp;type=3#WhatsApp Image 2024-08-21 at 15.28.14 (1)&quot;);" />
+    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/sprites/WhatsApp%20Image%202024-08-21%20at%2015.28.14.jpeg?fileID=2800000&amp;guid=5c9feb5167e924e4ab4b33534b86a60a&amp;type=3#WhatsApp Image 2024-08-21 at 15.28.14&quot;);" />
+    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/sprites/WhatsApp%20Image%202024-08-21%20at%2015.28.15.jpeg?fileID=2800000&amp;guid=62572adb1ba11cf409c5749d2c7268bb&amp;type=3#WhatsApp Image 2024-08-21 at 15.28.15&quot;);" />
 </ui:UXML>
